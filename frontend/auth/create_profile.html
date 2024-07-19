@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Subira Wafubwa">
+    <meta name="description" content="A simple note taking app">
+    <link rel="icon" type="img/png" href="../../assets/SD.png">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+    <title>Create Profile</title>
+</head>
+<body>
+    <div class="auth-main" style="height: 96%;">
+        <div class="auth-main-header">
+            <img src="../../assets/SD.png" alt="SubNote Logo" id="logo">
+            <h1 id="subnote-title">SubNote - A simple notetaker</h1>
+        </div>
+        <b></strong><h2>Welcome to SubNote!</h2></b>
+        <h3>Finish setting up your account</h3>
+        <input type="text" id="name" placeholder="Preferred name">
+        <input type="text" id="username" placeholder="Username">
+        <div class="gender">
+            <label for="gender">Choose gender:</label>
+            <select name="gender" id="gender">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="non-binary">Non-binary</option>
+                <option value="rather-not-say">Rather not say</option>
+            </select>
+        </div>
+        <div>
+            <button id="back" style="float: left;">Back</button>
+            <button id="create-profile-continue">Continue</button> 
+        </div>
+    </div>
+</body>
+<script type="module" src="./auth.js"></script>
+</html>

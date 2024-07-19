@@ -1,0 +1,62 @@
+[
+  {
+    "userID": "1ef45554-aa5a-60c0-8d4e-6181851c2472",
+    "name": "Subira Wafubwa",
+    "username": "csubiraw",
+    "email": "subira.craig.2023@gmail.com",
+    "password": "$2b$08$Bdvt/hsj689DzVwG2O853O2ekrufY3izKtjztxckJwklIRJHlh7Wy",
+    "gender": "male",
+    "data": {
+      "notes": [
+        {
+          "_id": "_gl17hm4n2",
+          "title": "Grocery List",
+          "content": "<ol><li>Milk</li><li>Eggs</li><li>Bread</li><li>Butter</li><li>Vegetables</li><li>Avocado</li></ol>",
+          "createdAt": "2024-07-19T01:54:45.932Z"
+        },
+        {
+          "_id": "_gl17hm4n3",
+          "title": "Workout",
+          "content": "<p>Monday: Chest and Triceps</p><p>Tuesday: Back and Biceps</p><p>Wednesday: Legs</p><p>Thursday: Shoulders</p><p>Friday: Cardio</p><p>Saturday: Full body</p><p>Sunday: Rest</p>",
+          "createdAt": "2024-07-19T01:55:28.999Z"
+        },
+        {
+          "_id": "_gl17hm4n4",
+          "title": "Book Recommendations",
+          "content": "<ol><li>\"To Kill a Mockingbird\" by Harper Lee</li><li>\"1984\" by George Orwell</li><li>\"The Great Gatsby\" by F. Scott Fitzgerald</li><li>\"The Catcher in the Rye\" by J.D. Salinger</li><li>\"Pride and Prejudice\" by Jane Austen</li></ol>",
+          "createdAt": "2024-07-19T01:57:10.200Z"
+        },
+        {
+          "_id": "_gl17hm4n5",
+          "title": "Travel Itinerary",
+          "content": "<h2>My travel Itinerary</h2><ol><li><strong>Day 1:</strong> Arrival and city tour</li><li><em>Day 2: </em>Visit historical sites</li><li><u>Day 3:</u> Beach day</li><li><strong><u>Day 4:</u></strong> Hiking and nature exploration</li><li><strong><em>Day 5:</em></strong> Shopping and local cuisine</li><li><em><u>Day 6:</u></em> Free day</li><li><strong><em><u>Day 7:</u></em></strong> Departure</li></ol><p><br></p><p><a href=\"youtube.com\" target=\"_blank\">View this link</a></p>",
+          "createdAt": "2024-07-19T02:00:38.607Z"
+        },
+        {
+          "_id": "_gl17hm4n6",
+          "title": "Chocolate Chip Cookies",
+          "content": "<p>Ingredients: Flour, sugar, butter, chocolate chips, eggs, baking soda, vanilla extract</p><p><br></p><p>Instructions:</p><p><br></p><ol><li>Preheat oven to 350°F (175°C).</li><li>Mix dry ingredients.</li><li>Cream butter and sugar.</li><li>Add eggs and vanilla.</li><li>Combine dry and wet ingredients.</li><li>Fold in chocolate chips.</li><li>Scoop dough onto baking sheet.</li><li>Bake for 10-12 minutes.</li></ol>",
+          "createdAt": "2024-07-19T02:01:38.490Z"
+        },
+        {
+          "_id": "_gl17hm4n7",
+          "title": "Study Schedule",
+          "content": "<p>Monday: Math - 2 hours</p><p>Tuesday: Science - 2 hours</p><p>Wednesday: History - 1.5 hours</p><p>Thursday: Literature - 1.5 hours</p><p>Friday: Art - 1 hour</p><p>Saturday: Review and practice tests - 3 hours</p><p>Sunday: Rest and leisure reading</p>",
+          "createdAt": "2024-07-19T02:02:37.464Z"
+        },
+        {
+          "_id": "_gl17hm4n8",
+          "title": "Heyzz",
+          "content": "<p>,,,,,,,,,,,,,,,,,,,,,,,,,,,</p><p>knjbkknk</p>",
+          "createdAt": "2024-07-19T02:59:06.162Z"
+        },
+        {
+          "_id": "_gl17hm4n1",
+          "title": "Hi",
+          "content": "<p>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>",
+          "createdAt": "2024-07-19T03:00:25.467Z"
+        }
+      ]
+    }
+  }
+]
