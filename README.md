@@ -25,20 +25,24 @@ SubiNote is a simple note-taking application designed for users to create, edit,
 
 3. **Install Dependencies**
 
-For backend:
+    For backend:
+
     ```bash
     cd server && npm install
 
-For frontend:
+    For frontend:
     ```bash
     cd ../phase-1-final-project && npm install http-server
 
 4. **Start the Application**
 
-Backend: Start the backend server to handle API requests.
+    Backend - Start the backend server to handle API requests:
+
     ```bash
     cd server && npm run dev
 
-Frontend: Start the frontend application to serve the user interface.
+    Frontend - Start the frontend application to serve the user interface.
     ```bash
     npx http-server "path/to/phase-1-final-project"
+
+[![Thumbnail](![alt text](image.png))](https://www.loom.com/share/a71bb9a4cc33466d99fcfd7f7c2f3935?sid=ee577d7c-5947-4bd2-af91-cb44d2a61301)
