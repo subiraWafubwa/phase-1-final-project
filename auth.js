@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('globalPassword', password);
 
         // Send email to server to get OTP
-        fetch('http://localhost:3000/api/send-otp', {
+        fetch('https://subnote-github-io-server.onrender.com/api/send-otp', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(globalEmail)
 
         try {
-            const response = await fetch('http://localhost:3000/api/verify-otp', {
+            const response = await fetch('https://subnote-github-io-server.onrender.com/api/verify-otp', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         try {
             // Check if the username already exists
-            const usernameResponse = await fetch(`http://localhost:3000/api/check-username/${username}`);
+            const usernameResponse = await fetch(`https://subnote-github-io-server.onrender.com/api/check-username/${username}`);
             const usernameResult = await usernameResponse.json();
 
             if (usernameResult.exists) {
@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
 
             // Check if the email already exists
-            const emailResponse = await fetch(`http://localhost:3000/api/check-email/${email}`);
+            const emailResponse = await fetch(`https://subnote-github-io-server.onrender.com/api/check-email/${email}`);
             const emailResult = await emailResponse.json();
 
             if (emailResult.exists) {
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
 
             // Proceed with user creation
-            const response = await fetch('http://localhost:3000/api/signup', {
+            const response = await fetch('https://subnote-github-io-server.onrender.com/api/signup', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -191,43 +191,45 @@ document.addEventListener('DOMContentLoaded', async () => {
 })
 
 // Login 
-document.getElementById('login-continue').addEventListener('click', async () => {
-    const emailOrUsername = document.getElementById('email-username-input').value.trim();
-    const password = document.getElementById('password-input').value.trim();
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('login-continue').addEventListener('click', async () => {
+        const emailOrUsername = document.getElementById('email-username-input').value.trim();
+        const password = document.getElementById('password-input').value.trim();
 
-    if (!emailOrUsername || !password) {
-        alert('Email/Username and password are required');
-        return;
-    }
-
-    try {
-        // Send POST request to login endpoint
-        const response = await fetch('http://localhost:3000/api/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                email: emailOrUsername,
-                username: emailOrUsername,
-                password: password
-            })
-        });
-
-        const result = await response.json();
-
-        if (response.ok) {
-            // Handle successful login
-            alert(result.status);
-            localStorage.setItem('token', result.token);
-            localStorage.setItem('user', JSON.stringify(result.user));
-            window.location.href = '../index.html'; 
-        } else {
-            // Handle login error
-            alert(result.message || 'An error occurred');
+        if (!emailOrUsername || !password) {
+            alert('Email/Username and password are required');
+            return;
         }
-    } catch (error) {
-        console.error('Error:', error);
-        alert('An error occurred');
-    }
+
+        try {
+            // Send POST request to login endpoint
+            const response = await fetch('http://localhost:3000/api/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email: emailOrUsername,
+                    username: emailOrUsername,
+                    password: password
+                })
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                // Handle successful login
+                alert(result.status);
+                localStorage.setItem('token', result.token);
+                localStorage.setItem('user', JSON.stringify(result.user));
+                window.location.href = '../index.html'; 
+            } else {
+                // Handle login error
+                alert(result.message || 'An error occurred');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('An error occurred');
+        }
+    });
 });

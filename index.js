@@ -79,7 +79,7 @@ function addCard() {
         // Fetch the user ID based on the email
         let userID;
         try {
-            const userResponse = await fetch(`http://localhost:3000/api/user-id/${encodeURIComponent(email)}`);
+            const userResponse = await fetch(`https://subnote-github-io-server.onrender.com/api/user-id/${encodeURIComponent(email)}`);
             const userResult = await userResponse.json();
 
             if (userResponse.ok) {
@@ -104,7 +104,7 @@ function addCard() {
 
         // Make POST request to save note
         try {
-            const response = await fetch('http://localhost:3000/api/post-notes', {
+            const response = await fetch('https://subnote-github-io-server.onrender.com/api/post-notes', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -198,7 +198,7 @@ async function editNote(noteId, existingTitle, existingContent, createdAt) {
 
         // Make PUT request to update note
         try {
-            const response = await fetch(`http://localhost:3000/api/update-note/${noteId}`, {
+            const response = await fetch(`https://subnote-github-io-server.onrender.com/api/update-note/${noteId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -238,7 +238,7 @@ async function getNotes() {
     }
 
     try {
-        const userResponse = await fetch(`http://localhost:3000/api/user-notes/${encodeURIComponent(email)}`);
+        const userResponse = await fetch(`https://subnote-github-io-server.onrender.com/api/user-notes/${encodeURIComponent(email)}`);
         const userResult = await userResponse.json();
 
         if (userResponse.ok) {
