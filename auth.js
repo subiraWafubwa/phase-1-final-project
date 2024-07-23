@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert(result.status);
                 localStorage.setItem('token', result.token);
                 localStorage.setItem('user', JSON.stringify(result.user));
-                window.location.href = './index.html'; 
+                window.location.href = './notetaker.html'; 
             } else {
                 // Handle login error
                 alert(result.message || 'An error occurred');
