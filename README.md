@@ -1,6 +1,6 @@
-# SubiNote
+# SubNote - A simple note taker
 
-SubiNote is a simple note-taking application designed for users to create, edit, and manage their notes with ease. It provides a rich text editor using Quill, allowing users to format their notes effortlessly. Additionally, it includes a search functionality to quickly find specific notes.
+SubNote is a simple note-taking application designed for users to create, edit, and manage their notes with ease. It provides a rich text editor using Quill, allowing users to format their notes effortlessly. Additionally, it includes a search functionality to quickly find specific notes.
 
 ## Features
 
