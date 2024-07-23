@@ -11,6 +11,9 @@ SubNote is a simple note-taking application designed for users to create, edit, 
 - **Local Data Storage**: Notes and user data are stored locally using a `db.json` file.
 - **Backend Operations**: Node.js and Express handle backend operations to support note creation, updates, and user management.
 
+## Deployment
+The application is deployed on <a>https://subnote-github-io.onrender.com</a>
+
 ## Installation
 
 1. **Clone the Repository**
@@ -44,5 +47,7 @@ SubNote is a simple note-taking application designed for users to create, edit, 
     Frontend - Start the frontend application to serve the user interface.
     ```bash
     npx http-server "path/to/phase-1-final-project"
+
+## Video Description of the code
 
 [![Thumbnail](![alt text](image.png))](https://www.loom.com/share/a71bb9a4cc33466d99fcfd7f7c2f3935?sid=ee577d7c-5947-4bd2-af91-cb44d2a61301)
