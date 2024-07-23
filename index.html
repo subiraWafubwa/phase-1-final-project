@@ -7,51 +7,22 @@
     <meta name="description" content="A simple note taking app">
     <link rel="icon" type="img/png" href="./assets/SD.png">
 	<link rel="stylesheet" type="text/css" href="./style.css">
-    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-    <title>SubNote - A simple notetaker</title>
+    <title>Sign Up to SubNote</title>
 </head>
 <body>
-    <div class="body-and-header">
-        <div class="main-header">
+    <div class="auth-main">
+        <div class="auth-main-header">
             <img src="./assets/SD.png" alt="SubNote Logo" id="logo">
             <h1 id="subnote-title">SubNote - A simple notetaker</h1>
-            <div class="search-container">
-                <input type="text" placeholder="Search..." class="search-input">
-                <button type="submit" class="search-button">
-                    <img src="./assets/search.png" alt="Search" class="search-icon">
-                </button>
-            </div>
-            <button class="user">
-                <img src="./assets/user.png" alt="User" class="user-icon">
-            </button>
         </div>
-        <div class="main-body">
-            <!--
-            <div class="categories">
-                <div id="add-category">
-                    <img id="add-category-image" src="../assets/add.png" alt="Add Icon">
-                    <h2 id="add-category-title">Add category</h2>
-                </div>
-                <div class="my-categories">
-                    <div id="all-notes">
-                        <div id="category-color"></div>
-                        <div id="category-title">All Notes</div>
-                    </div>
-                </div>
-            </div>
-            -->
-            <div class="notes">
-                <button id="add-note">
-                    <img src="./assets/add.png" alt="Add icon" id="add-note-image">
-                </button>
-                <div class="no-notes">
-                    <img src="./assets/no-note.png" alt="" id="no-note-icon">
-                    <h3 id="no-note-text">You have no notes!</h3>                    
-                </div>
-            </div>
-        </div>
+        <b></strong><h2>Welcome to SubNote!</h2></b>
+        <h3>Please sign up to continue</h3>
+        <input type="text" id="email-input" placeholder="Email">
+        <input type="password" id="password-input" placeholder="Password">
+        <p id="login-text">Already have account? <a href="./log_in.html" id="link">Log in instead</a></p>
+        <button id="create-account-continue">Continue</button>
     </div>
 </body>
-<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-<script src="./index.js"></script>
+<script type="module" src="./auth.js"></script>
+</script>
 </html>
