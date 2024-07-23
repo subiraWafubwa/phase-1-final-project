@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // Send POST request to login endpoint
-            const response = await fetch('http://localhost:3000/api/login', {
+            const response = await fetch('https://subnote-github-io-server.onrender.com/api/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert(result.status);
                 localStorage.setItem('token', result.token);
                 localStorage.setItem('user', JSON.stringify(result.user));
-                window.location.href = '../index.html'; 
+                window.location.href = './index.html'; 
             } else {
                 // Handle login error
                 alert(result.message || 'An error occurred');
